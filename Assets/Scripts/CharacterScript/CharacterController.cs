@@ -9,7 +9,7 @@ public class CharacterController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
-    Vector2 lastMotionVector;
+    public Vector2 lastMotionVector;
     Animator animator;
     public bool moving;
 
