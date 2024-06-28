@@ -106,11 +106,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Overworld_0
+      name: Glass
       rect:
         serializedVersion: 2
         x: 0
@@ -20438,7 +20451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_970
+      name: PlowAbleDirt
       rect:
         serializedVersion: 2
         x: 16
@@ -22611,7 +22624,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Overworld_0: 1615041477
+      Glass: 1615041477
       Overworld_1: -1120320103
       Overworld_10: 761313254
       Overworld_100: -1161821193
@@ -23651,7 +23664,6 @@ TextureImporter:
       Overworld_968: 1774823161
       Overworld_969: 863914805
       Overworld_97: 272510528
-      Overworld_970: 898298910
       Overworld_971: -617592473
       Overworld_972: 448221790
       Overworld_973: -966971945
@@ -23683,6 +23695,7 @@ TextureImporter:
       Overworld_997: 279941853
       Overworld_998: 279692936
       Overworld_999: -1323446347
+      PlowAbleDirt: 898298910
       TreeLog: 1703620803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
