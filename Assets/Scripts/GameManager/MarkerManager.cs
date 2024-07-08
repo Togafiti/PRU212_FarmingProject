@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,16 +10,22 @@ public class MarkerManager : MonoBehaviour
     [SerializeField] TileBase tile;
     public Vector3Int markerCellPosition;
      Vector3Int oldCellPosition;
-    void Start()
-    {
-        
-    }
+    bool show;
 
-    // Update is called once per frame
     private void Update()
     {
+        if(show == false)
+        {
+            return;
+        }
         targetTilemap.SetTile(oldCellPosition, null);
         targetTilemap.SetTile(markerCellPosition, tile);
         oldCellPosition= markerCellPosition;
+    }
+
+    internal void Show(bool selectable)
+    {
+        show = selectable;
+        targetTilemap.gameObject.SetActive(show);
     }
 }

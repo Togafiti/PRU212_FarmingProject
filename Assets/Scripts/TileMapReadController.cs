@@ -19,11 +19,7 @@ public class TileMapReadController : MonoBehaviour
             }
         }
     }
-    public void Update()
-    {
-        
-        
-    }
+
     public Vector3Int GetGridPosition(Vector2 position, bool mousePosition)
     {
         Vector3 worldPostion;
@@ -48,7 +44,18 @@ public class TileMapReadController : MonoBehaviour
         Debug.Log("Tile Postion=" + gridPostion + " is " + tile);
         return tile;
     }
-    public TileData GetTileData(TileBase tilebase) { 
+
+    public TileData GetTileData(TileBase tilebase) {
+
+        if (tilebase == null)
+        {
+            return null;
+        }
+
+        if (dataFromTile.ContainsKey(tilebase) == false)
+        {
+            return null;
+        }
 
         return dataFromTile[tilebase];
     }
