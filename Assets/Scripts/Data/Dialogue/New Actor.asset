@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590ef156ad3974d4bb5263e77180b087, type: 3}
   m_Name: New Actor
   m_EditorClassIdentifier: 
-  Name: 
-  portrait: {fileID: 0}
+  Name: steve
+  portrait: {fileID: 4005202913230342895, guid: 2d0dfd935517f7049a9ec156af517511, type: 3}

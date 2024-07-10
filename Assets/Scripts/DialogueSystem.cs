@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -64,17 +63,36 @@ public class DialogueSystem : MonoBehaviour
 
     void CycleLine()
     {
-        lineToShow = currentDialogue.line[currentTextLine];
-        totalTimeToType = lineToShow.Length * timePerLetter;
-        currentTime = 0f;
-        visibleTextPercent = 0f;
-        targetText.text = "";
+        if (currentDialogue != null && currentTextLine < currentDialogue.line.Count)
+        {
+            lineToShow = currentDialogue.line[currentTextLine];
+            totalTimeToType = lineToShow.Length * timePerLetter;
+            currentTime = 0f;
+            visibleTextPercent = 0f;
+            targetText.text = "";
 
-        currentTextLine += 1;
+            currentTextLine += 1;
+        }
+        else
+        {
+            Debug.LogWarning("currentDialogue is null or currentTextLine is out of range.");
+        }
     }
 
     public void Initialize(DialogueContainer dialogueContainer)
     {
+        if (dialogueContainer == null)
+        {
+            Debug.LogWarning("Dialogue container is null.");
+            return;
+        }
+
+        if (dialogueContainer.line == null || dialogueContainer.line.Count == 0)
+        {
+            Debug.LogWarning("Dialogue container is empty or has no lines.");
+            return;
+        }
+
         Show(true);
         currentDialogue = dialogueContainer;
         currentTextLine = 0;
@@ -84,8 +102,15 @@ public class DialogueSystem : MonoBehaviour
 
     private void UpdatePortrait()
     {
-        portrait.sprite = currentDialogue.actor.portrait;
-        nameText.text = currentDialogue.actor.Name;
+        if (currentDialogue != null && currentDialogue.actor != null)
+        {
+            portrait.sprite = currentDialogue.actor.portrait;
+            nameText.text = currentDialogue.actor.Name;
+        }
+        else
+        {
+            Debug.LogWarning("Current dialogue or actor is null.");
+        }
     }
 
     private void Show(bool v)

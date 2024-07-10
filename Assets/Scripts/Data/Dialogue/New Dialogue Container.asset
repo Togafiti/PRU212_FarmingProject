@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e08bb2955e85a846bc12dd08a46f3f8, type: 3}
   m_Name: New Dialogue Container
   m_EditorClassIdentifier: 
-  line: []
-  actor: {fileID: 0}
+  line:
+  - test1
+  - test2
+  - test3
+  actor: {fileID: 11400000, guid: f558a37fe18724b4f84745b6de5eda6a, type: 2}
