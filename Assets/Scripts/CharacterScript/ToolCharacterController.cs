@@ -62,7 +62,7 @@ public class ToolCharacterController : MonoBehaviour
     {
         Vector2 position = rigidbody2d.position + character.lastMotionVector * offsetDistance;
 
-        
+
 
         return false;
     }
