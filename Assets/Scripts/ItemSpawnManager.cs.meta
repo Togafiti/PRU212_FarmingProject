@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 3e262def0d17cf94ab7fbc8841033c4f
+guid: 8bfc9caaea8f9ce489118d8b1fb09903
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PickUpItemPrefab: {fileID: 6023622885364795334, guid: 9e7c1932b0ad6be4cb8d1c8df0957f54, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

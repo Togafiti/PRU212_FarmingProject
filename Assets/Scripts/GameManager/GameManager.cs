@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] ScreenTint ScreenTint;
     public GameObject player;
     public DialogueSystem dialogueSystem;
-
     public DayTimeController timeController;
-
+    public ItemDragAndDropController dragAndDropController;
+    public ItemContainer inventoryContainer;
 }
