@@ -307,9 +307,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 321225639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 746656203ae8d2548a9fe66ea19d059c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9aeb22602be67374c9fe4cc1f04ed6aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp:
+    maxVal: 0
+    currVal: 0
+  stamina:
+    maxVal: 0
+    currVal: 0
+  isDead: 0
+  isExhausted: 0
 --- !u!114 &321225650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +370,7 @@ MonoBehaviour:
   ScreenTint: {fileID: 231048338}
   player: {fileID: 321225639}
   dialogueSystem: {fileID: 2023533500}
+  timeController: {fileID: 362204027}
 --- !u!4 &362204026
 Transform:
   m_ObjectHideFlags: 0
@@ -495,8 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5267d2fc6c6f30045aedb5fbe9313b62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plowed: {fileID: 11400000, guid: e04c1f2ae839d0e4992b7f5574edb409, type: 2}
-  seeded: {fileID: 11400000, guid: 9cb8b6e8d8337994490e277d58506e0b, type: 2}
+  plowed: {fileID: 11400000, guid: 02a47da298057ce47813c29ffb93bac2, type: 2}
+  seeded: {fileID: 11400000, guid: a5bba11e1b154764bbe0b56e2e75a2a3, type: 2}
   targetTilemap: {fileID: 518961569}
 --- !u!114 &362204031
 MonoBehaviour:
@@ -1234,7 +1243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 311.9636, y: 74.87378}
+  m_AnchoredPosition: {x: 350, y: 90.874}
   m_SizeDelta: {x: 623.9273, y: 149.7476}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478423171
