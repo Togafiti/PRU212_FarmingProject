@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
     }
-
+    [SerializeField] ScreenTint ScreenTint;
     public GameObject player;
     public DialogueSystem dialogueSystem;
 
