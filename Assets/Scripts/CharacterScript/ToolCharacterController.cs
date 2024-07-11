@@ -62,17 +62,7 @@ public class ToolCharacterController : MonoBehaviour
     {
         Vector2 position = rigidbody2d.position + character.lastMotionVector * offsetDistance;
 
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
-
-        foreach(Collider2D collider in colliders)
-        {
-            ToolHit hit = collider.GetComponent<ToolHit>();
-            if(hit != null )
-            {
-                hit.Hit();
-                return true;
-            }
-        }
+        
 
         return false;
     }

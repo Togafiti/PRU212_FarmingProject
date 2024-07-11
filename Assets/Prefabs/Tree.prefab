@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 329964226886418851}
   - component: {fileID: 850570330633661479}
   - component: {fileID: 7927029511218078343}
+  - component: {fileID: 327735683648165122}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -146,3 +147,15 @@ MonoBehaviour:
   pickUpDrop: {fileID: 6023622885364795334, guid: 9e7c1932b0ad6be4cb8d1c8df0957f54, type: 3}
   dropCount: 5
   spread: 0.7
+--- !u!114 &327735683648165122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848751579056406385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798767b6079f855449c24a2da42c9943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
