@@ -3399,7 +3399,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_156
+      name: sand
       rect:
         serializedVersion: 2
         x: 16
@@ -5289,7 +5289,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_248
+      name: sandw1
       rect:
         serializedVersion: 2
         x: 240
@@ -5310,7 +5310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_249
+      name: sandw2
       rect:
         serializedVersion: 2
         x: 256
@@ -5331,7 +5331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_250
+      name: sandw3
       rect:
         serializedVersion: 2
         x: 272
@@ -6129,7 +6129,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_288
+      name: sandw8
       rect:
         serializedVersion: 2
         x: 240
@@ -6150,7 +6150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_289
+      name: sandw4
       rect:
         serializedVersion: 2
         x: 272
@@ -6864,7 +6864,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_323
+      name: sandw7
       rect:
         serializedVersion: 2
         x: 240
@@ -6885,7 +6885,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_324
+      name: sandw6
       rect:
         serializedVersion: 2
         x: 256
@@ -6906,7 +6906,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_325
+      name: sandw5
       rect:
         serializedVersion: 2
         x: 272
@@ -7641,7 +7641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_360
+      name: sandIner1
       rect:
         serializedVersion: 2
         x: 240
@@ -7662,13 +7662,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_361
+      name: sandIner2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 416
-        width: 16
-        height: 16
+        x: 260
+        y: 411
+        width: 12
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8355,7 +8355,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_394
+      name: sandIner4
       rect:
         serializedVersion: 2
         x: 240
@@ -8376,7 +8376,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_395
+      name: sandIner3
       rect:
         serializedVersion: 2
         x: 256
@@ -9090,7 +9090,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_429
+      name: RoadTopLeft
       rect:
         serializedVersion: 2
         x: 240
@@ -9111,7 +9111,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_430
+      name: RoadTop
       rect:
         serializedVersion: 2
         x: 256
@@ -9132,7 +9132,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_431
+      name: RoadTopRight
       rect:
         serializedVersion: 2
         x: 272
@@ -9804,7 +9804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_463
+      name: RoadLeft
       rect:
         serializedVersion: 2
         x: 240
@@ -9825,7 +9825,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_464
+      name: RoadCenter
       rect:
         serializedVersion: 2
         x: 256
@@ -9846,7 +9846,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_465
+      name: RoadRight
       rect:
         serializedVersion: 2
         x: 272
@@ -10476,7 +10476,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_495
+      name: RoadBotLeft
       rect:
         serializedVersion: 2
         x: 240
@@ -10497,7 +10497,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_496
+      name: RoadBot
       rect:
         serializedVersion: 2
         x: 256
@@ -10518,7 +10518,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_497
+      name: RoadBotRight
       rect:
         serializedVersion: 2
         x: 272
@@ -11169,7 +11169,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_528
+      name: Road1
       rect:
         serializedVersion: 2
         x: 240
@@ -11190,7 +11190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_529
+      name: Road2
       rect:
         serializedVersion: 2
         x: 256
@@ -11862,7 +11862,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_561
+      name: Road4
       rect:
         serializedVersion: 2
         x: 240
@@ -11883,7 +11883,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_562
+      name: Road3
       rect:
         serializedVersion: 2
         x: 256
@@ -22771,7 +22771,6 @@ TextureImporter:
       Overworld_153: -596177560
       Overworld_154: -1742729099
       Overworld_155: 1255840971
-      Overworld_156: -1086902706
       Overworld_157: 569624231
       Overworld_158: -447853453
       Overworld_159: -1630567747
@@ -22869,10 +22868,7 @@ TextureImporter:
       Overworld_245: 1431823433
       Overworld_246: 1322098231
       Overworld_247: -1515483328
-      Overworld_248: 2131055031
-      Overworld_249: 1298726085
       Overworld_25: -330008388
-      Overworld_250: -1272021791
       Overworld_251: 1350056005
       Overworld_252: 1498747292
       Overworld_253: 197935290
@@ -22910,8 +22906,6 @@ TextureImporter:
       Overworld_285: 282687907
       Overworld_286: -12357284
       Overworld_287: 343695000
-      Overworld_288: -1825943639
-      Overworld_289: -1687349833
       Overworld_29: 1441563279
       Overworld_290: 1238724259
       Overworld_291: -14875269
@@ -22947,9 +22941,6 @@ TextureImporter:
       Overworld_320: 1128104156
       Overworld_321: -481431300
       Overworld_322: 670681502
-      Overworld_323: -364359674
-      Overworld_324: -256885904
-      Overworld_325: -1774634524
       Overworld_326: -1924825721
       Overworld_327: 1016390093
       Overworld_328: -797345120
@@ -22986,8 +22977,6 @@ TextureImporter:
       Overworld_358: -2089643494
       Overworld_359: 186519116
       Overworld_36: -549758897
-      Overworld_360: -582493079
-      Overworld_361: -392581842
       Overworld_362: 744051620
       Overworld_363: 1994441231
       Overworld_364: 1824294089
@@ -23019,8 +23008,6 @@ TextureImporter:
       Overworld_391: 433522250
       Overworld_392: 1934394888
       Overworld_393: 1832764058
-      Overworld_394: -852725952
-      Overworld_395: 1427738652
       Overworld_396: 399199866
       Overworld_397: 492674429
       Overworld_398: -1440539905
@@ -23055,10 +23042,7 @@ TextureImporter:
       Overworld_426: 216406252
       Overworld_427: 1680990290
       Overworld_428: 345666930
-      Overworld_429: -1695819130
       Overworld_43: -1426542231
-      Overworld_430: 145708566
-      Overworld_431: 1325563818
       Overworld_432: 1442203481
       Overworld_433: 209327939
       Overworld_434: -364738471
@@ -23090,9 +23074,6 @@ TextureImporter:
       Overworld_460: 1133850473
       Overworld_461: -2003516007
       Overworld_462: 1874368539
-      Overworld_463: 1213111394
-      Overworld_464: 1187129515
-      Overworld_465: -1139014210
       Overworld_466: -1205941134
       Overworld_467: 821600073
       Overworld_468: -1125579650
@@ -23122,9 +23103,6 @@ TextureImporter:
       Overworld_492: -1328325753
       Overworld_493: 623426340
       Overworld_494: -774273328
-      Overworld_495: 1962428436
-      Overworld_496: -792854949
-      Overworld_497: 260907444
       Overworld_498: 1883371947
       Overworld_499: -642951131
       Overworld_5: 1840911072
@@ -23156,8 +23134,6 @@ TextureImporter:
       Overworld_525: 1126400766
       Overworld_526: -184214326
       Overworld_527: -1118999446
-      Overworld_528: 1479205604
-      Overworld_529: 1808450247
       Overworld_53: -569821994
       Overworld_530: -105250419
       Overworld_531: -1058103806
@@ -23193,8 +23169,6 @@ TextureImporter:
       Overworld_559: 1647841646
       Overworld_56: -1040057030
       Overworld_560: 790907827
-      Overworld_561: 1884483073
-      Overworld_562: 1281108706
       Overworld_563: 898641348
       Overworld_564: 966376266
       Overworld_565: 570607697
@@ -23671,6 +23645,19 @@ TextureImporter:
       Overworld_998: 279692936
       Overworld_999: -1323446347
       PlowAbleDirt: 898298910
+      Road1: 1479205604
+      Road2: 1808450247
+      Road3: 1281108706
+      Road4: 1884483073
+      RoadBot: -792854949
+      RoadBotLeft: 1962428436
+      RoadBotRight: 260907444
+      RoadCenter: 1187129515
+      RoadLeft: 1213111394
+      RoadRight: -1139014210
+      RoadTop: 145708566
+      RoadTopLeft: -1695819130
+      RoadTopRight: 1325563818
       TreeLog: 1703620803
       plowAbleDirt innerConer -TopLeft: -1712758023
       plowAbleDirt innerConer -TopRight: 228638937
@@ -23684,6 +23671,19 @@ TextureImporter:
       plowAbleDirt-Top: -198507331
       plowAbleDirt-TopLeft: 592574779
       plowAbleDirt-TopRight: -1145879756
+      sand: -1086902706
+      sandIner1: -582493079
+      sandIner2: -392581842
+      sandIner3: 1427738652
+      sandIner4: -852725952
+      sandw1: 2131055031
+      sandw2: 1298726085
+      sandw3: -1272021791
+      sandw4: -1687349833
+      sandw5: -1774634524
+      sandw6: -256885904
+      sandw7: -364359674
+      sandw8: -1825943639
       water: 785678973
       water-Bot: 1633961094
       water-BotLeft: -1044841974
