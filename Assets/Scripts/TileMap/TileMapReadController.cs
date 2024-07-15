@@ -7,22 +7,19 @@ public class TileMapReadController : MonoBehaviour
 {
     [SerializeField] Tilemap tilemap;
     public CropsManager cropsManager;
-    [SerializeField] List<TileData> tileDatas;
-    Dictionary<TileBase, TileData> dataFromTile;
-    private void Start()
-    {
-        dataFromTile = new Dictionary<TileBase, TileData>();    
-        foreach(TileData tiledata in tileDatas)
-        {
-            foreach (TileBase tile in tiledata.tiles)
-            {
-                dataFromTile.Add(tile,tiledata);
-            }
-        }
-    }
 
     public Vector3Int GetGridPosition(Vector2 position, bool mousePosition)
     {
+        if(tilemap == null)
+        {
+            tilemap = GameObject.Find("BaseTilemap").GetComponent<Tilemap>();
+        }
+
+        if (tilemap == null) 
+        { 
+            return Vector3Int.zero;
+        }
+
         Vector3 worldPostion;
         if (mousePosition)
         {
@@ -40,25 +37,19 @@ public class TileMapReadController : MonoBehaviour
 
     public TileBase GetTileBase(Vector3Int gridPostion)
     {
-        
+        if (tilemap == null)
+        {
+            tilemap = GameObject.Find("BaseTilemap").GetComponent<Tilemap>();
+        }
+
+        if (tilemap == null)
+        {
+            return null;
+        }
+
         TileBase tile= tilemap.GetTile(gridPostion);
 
         Debug.Log("Tile Position=" + gridPostion + " is " + tile);
         return tile;
-    }
-
-    public TileData GetTileData(TileBase tilebase) {
-
-        if (tilebase == null)
-        {
-            return null;
-        }
-
-        if (dataFromTile.ContainsKey(tilebase) == false)
-        {
-            return null;
-        }
-
-        return dataFromTile[tilebase];
     }
 }

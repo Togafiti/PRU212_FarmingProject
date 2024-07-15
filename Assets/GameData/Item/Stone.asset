@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Stone
   m_EditorClassIdentifier: 
   Name: Stone
-  stackable: 0
+  stackable: 1
   icon: {fileID: 21300000, guid: f00945d9428a1464d89e67f2b19744f8, type: 3}
   onAction: {fileID: 0}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}

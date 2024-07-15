@@ -15,6 +15,7 @@ public class ToolCharacterController : MonoBehaviour
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapReadController tileMapReadController;
     [SerializeField] float maxDistance = 1.5f;
+    [SerializeField] ToolAction onTilePickUp;
 
     Vector3Int selectedTilePosition;
     bool selectable;
@@ -32,9 +33,9 @@ public class ToolCharacterController : MonoBehaviour
         SelectTile();
         CanSelectCheck();
         Mark();
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            if(UseToolWorld() == true)
+            if (UseToolWorld() == true)
             {
                 return;
             }
@@ -56,7 +57,7 @@ public class ToolCharacterController : MonoBehaviour
     }
     private void Mark()
     {
-        Vector3Int gridPosition = selectedTilePosition;   
+        Vector3Int gridPosition = selectedTilePosition;
         markerManager.markerCellPosition = gridPosition;
     }
 
@@ -65,14 +66,14 @@ public class ToolCharacterController : MonoBehaviour
         Vector2 position = rigidbody2d.position + character.lastMotionVector * offsetDistance;
 
         Item item = toolBarController.GetItem;
-        if(item == null)
+        if (item == null)
         {
             return false;
         }
 
-        if(item.onAction == null)
+        if (item.onAction == null)
         {
-            return false ;
+            return false;
         }
 
         animator.SetTrigger("act");
@@ -90,28 +91,39 @@ public class ToolCharacterController : MonoBehaviour
 
     private void UseToolGrid()
     {
-        if(selectable == true)
+        if (selectable == true)
         {
             Item item = toolBarController.GetItem;
-            if(item == null)
+            if (item == null)
             {
+                PickUpTile();
                 return;
             }
-            if(item.onTileMapAction == null)
+            if (item.onTileMapAction == null)
             {
                 return;
             }
 
             animator.SetTrigger("act");
-            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController);
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController, item);
 
-            if(complete == true)
+            if (complete == true)
             {
-                if(item.onItemUsed != null)
+                if (item.onItemUsed != null)
                 {
                     item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
                 }
             }
         }
+    }
+
+    private void PickUpTile()
+    {
+        if (onTilePickUp == null)
+        {
+            return;
+        }
+
+        onTilePickUp.OnApplyToTileMap(selectedTilePosition, tileMapReadController, null);
     }
 }

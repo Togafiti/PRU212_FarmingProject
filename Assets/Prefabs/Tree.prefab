@@ -175,5 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0285547e0f6355247bf45efaae0289b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSpawn: {fileID: 0}
-  count: 0
+  toSpawn: {fileID: 11400000, guid: 9a73c9c018ebd8249a0c80c4e9134539, type: 2}
+  count: 1
+  spread: 2
+  probability: 0.1

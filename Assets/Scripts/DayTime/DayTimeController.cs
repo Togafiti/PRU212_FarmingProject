@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class DayTimeController : MonoBehaviour
 {
     const float secondsInDay = 86400f;
+    const float phaseLength = 900f; // 15 minutes
 
     [SerializeField] Color nightLightColor;
     [SerializeField] AnimationCurve nightTimeCurve;
@@ -16,6 +17,7 @@ public class DayTimeController : MonoBehaviour
 
     float time;
     [SerializeField] float timeScale = 60f;
+    [SerializeField] float startAllTime = 28800f;
 
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Light2D globalLight;
@@ -26,6 +28,11 @@ public class DayTimeController : MonoBehaviour
     private void Awake()
     {
         agents = new List<TimeAgent>();
+    }
+
+    private void Start()
+    {
+        time -= startAllTime;
     }
 
     public void Subscribe(TimeAgent timeAgent)
@@ -51,16 +58,44 @@ public class DayTimeController : MonoBehaviour
     private void Update()
     {
         time += Time.deltaTime * timeScale;
-        int hh = (int)Hours;
-        int mm = (int)Minutes;
-        text.text = hh.ToString("00") + ":" + mm.ToString("00");
-        float v = nightTimeCurve.Evaluate(Hours);
-        Color c = Color.Lerp(dayLightColor, nightLightColor, v);
-        globalLight.color = c;
-        if(time > secondsInDay)
+        TimeValueCalculation();
+        DayLight();
+        if (time > secondsInDay)
         {
             NextDay();
         }
+
+        TimeAgents();
+
+    }
+
+    private void TimeValueCalculation()
+    {
+        int hh = (int)Hours;
+        int mm = (int)Minutes;
+        text.text = hh.ToString("00") + ":" + mm.ToString("00");
+    }
+
+    private void DayLight()
+    {
+        float v = nightTimeCurve.Evaluate(Hours);
+        Color c = Color.Lerp(dayLightColor, nightLightColor, v);
+        globalLight.color = c;
+    }
+
+    int oldPhase = 0;
+    private void TimeAgents()
+    {
+        int currentPhase = (int)(time / phaseLength);
+        
+        if(oldPhase != currentPhase)
+        {
+            oldPhase = currentPhase;
+            for (int i = 0; i < agents.Count; i++)
+            {
+                agents[i].Invoke();
+            }
+        }       
     }
 
     private void NextDay()
