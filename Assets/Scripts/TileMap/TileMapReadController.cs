@@ -11,30 +11,32 @@ public class TileMapReadController : MonoBehaviour
 
     public Vector3Int GetGridPosition(Vector2 position, bool mousePosition)
     {
-        if(tilemap == null)
+        if (tilemap == null)
         {
             tilemap = GameObject.Find("BaseTilemap").GetComponent<Tilemap>();
+            if (tilemap == null)
+            {
+                Debug.LogError("Tilemap is not found. Make sure there is a GameObject named 'BaseTilemap' with a Tilemap component.");
+                return Vector3Int.zero;
+            }
         }
 
-        if (tilemap == null) 
-        { 
-            return Vector3Int.zero;
-        }
-
-        Vector3 worldPostion;
+        Vector3 worldPosition;
         if (mousePosition)
         {
-            worldPostion = Camera.main.ScreenToWorldPoint(position);
-
+            worldPosition = Camera.main.ScreenToWorldPoint(position);
         }
         else
         {
-            worldPostion = position;
+            worldPosition = position;
         }
 
-        Vector3Int gridPostion = tilemap.WorldToCell(worldPostion);
-        return gridPostion;
+        Vector3Int gridPosition = tilemap.WorldToCell(worldPosition);
+        Debug.Log($"Mouse Position: {position}, World Position: {worldPosition}, Grid Position: {gridPosition}");
+
+        return gridPosition;
     }
+
 
     public TileBase GetTileBase(Vector3Int gridPostion)
     {
@@ -53,4 +55,5 @@ public class TileMapReadController : MonoBehaviour
         Debug.Log("Tile Position=" + gridPostion + " is " + tile);
         return tile;
     }
+
 }
