@@ -2871,17 +2871,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2611179435161025225, guid: 70ee79f45c63a354a905000e1e2a857c, type: 3}
-      propertyPath: m_LayerOverridePriority
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6000355379579690423, guid: 70ee79f45c63a354a905000e1e2a857c, type: 3}
       propertyPath: m_Name
       value: Chest
-      objectReference: {fileID: 0}
-    - target: {fileID: 8166566627645403961, guid: 70ee79f45c63a354a905000e1e2a857c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8166566627645403961, guid: 70ee79f45c63a354a905000e1e2a857c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2932,6 +2924,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2102196375}
   - {fileID: 1679212862}
   - {fileID: 732169008}
   - {fileID: 7576932015133785841}
@@ -2942,4 +2935,3 @@ SceneRoots:
   - {fileID: 1942510796}
   - {fileID: 1064200710}
   - {fileID: 1395868539018925285}
-  - {fileID: 2102196375}

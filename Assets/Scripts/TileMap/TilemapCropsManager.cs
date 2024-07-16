@@ -81,6 +81,11 @@ public class TilemapCropsManager : TimeAgent
         }
     }
 
+    internal bool Check(Vector3Int position)
+    {
+        return container.Get(position) != null;
+    }
+
     public void Plow(Vector3Int position)
     {
         if(Check(position) == true)
@@ -89,6 +94,7 @@ public class TilemapCropsManager : TimeAgent
         }
         CreatePlowedTile(position);
     }
+
 
     public void Seed(Vector3Int position, Crop toSeed)
     {
@@ -157,8 +163,5 @@ public class TilemapCropsManager : TimeAgent
         }
     }
 
-    internal bool Check(Vector3Int position)
-    {
-        return container.Get(position) != null;
-    }
+    
 }

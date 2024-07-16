@@ -17,7 +17,7 @@ MonoBehaviour:
   icon: {fileID: 1742884116, guid: c61babf73890a034081c228c0d3b75f6, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: 9a47445ae82558d44844285976856d01, type: 2}
-  onItemUsed: {fileID: 0}
+  onItemUsed: {fileID: 11400000, guid: 9a47445ae82558d44844285976856d01, type: 2}
   crop: {fileID: 0}
   itemHightlight: 1
   itemPrrefab: {fileID: 6000355379579690423, guid: 70ee79f45c63a354a905000e1e2a857c, type: 3}
