@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33cbd54a2d3c59843b50804a6a00adb5, type: 3}
   m_Name: New Crafting Recipe
   m_EditorClassIdentifier: 
-  elements: []
+  elements:
+  - item: {fileID: 11400000, guid: 6154c3113d7a0ee40b02a3904abeed26, type: 2}
+    count: 5
   output:
-    item: {fileID: 0}
-    count: 0
+    item: {fileID: 11400000, guid: 6154c3113d7a0ee40b02a3904abeed26, type: 2}
+    count: 1
