@@ -1417,6 +1417,7 @@ GameObject:
   - component: {fileID: 362204031}
   - component: {fileID: 362204032}
   - component: {fileID: 362204033}
+  - component: {fileID: 362204034}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1442,6 +1443,7 @@ MonoBehaviour:
   timeController: {fileID: 362204027}
   dragAndDropController: {fileID: 362204032}
   inventoryContainer: {fileID: 11400000, guid: 9bc9e58b8d99fa9418a516cf26b53045, type: 2}
+  placeableObjects: {fileID: 0}
 --- !u!4 &362204026
 Transform:
   m_ObjectHideFlags: 0
@@ -1549,6 +1551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
   cropsManager: {fileID: 362204030}
+  objectsManager: {fileID: 362204034}
 --- !u!114 &362204029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1618,6 +1621,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickUpItemPrefab: {fileID: 6023622885364795334, guid: 9e7c1932b0ad6be4cb8d1c8df0957f54, type: 3}
+--- !u!114 &362204034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362204024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b6178e752c1db94c8d55701bf056401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placableObjectsManager: {fileID: 0}
 --- !u!224 &372302465 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3575777577619585724, guid: c1f21d5364d42bf4dbb350bc48a8b1ea, type: 3}
