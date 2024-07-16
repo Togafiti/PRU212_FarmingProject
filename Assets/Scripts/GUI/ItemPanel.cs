@@ -34,7 +34,7 @@ public class ItemPanel : MonoBehaviour
         }
     }
 
-    public void Show()
+    public virtual void Show()
     {
         for (int i = 0; i < inventory.slots.Count && i < buttons.Count; i++)
         {
