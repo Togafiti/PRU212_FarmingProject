@@ -46,6 +46,14 @@ public class ToolCharacterController : MonoBehaviour
     private void SelectTile()
     {
         selectedTilePosition = tileMapReadController.GetGridPosition(Input.mousePosition, true);
+        if (selectedTilePosition == null)
+        {
+            Debug.LogError("selectedTilePosition is null. Check tileMapReadController and GetGridPosition method.");
+        }
+        else
+        {
+            Debug.Log("Selected Tile Position: " + selectedTilePosition);
+        }
     }
 
     void CanSelectCheck()

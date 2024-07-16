@@ -15,9 +15,11 @@ public class CameraConfiner : MonoBehaviour
 
     public void UpdateBounds()
     {
-        GameObject go = GameObject.Find("CameraConfiner");
+
+        GameObject go = GameObject.Find("CameraConfider");
         if (go == null)
         {
+            Debug.LogWarning("confider null");
             confiner.m_BoundingShape2D = null;
             return;
         }
