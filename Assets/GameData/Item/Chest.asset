@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1b7384471c7114bb56709d52be5b0e, type: 3}
   m_Name: Chest
   m_EditorClassIdentifier: 
+  id: 1
   Name: Chest
   stackable: 0
   icon: {fileID: 1742884116, guid: c61babf73890a034081c228c0d3b75f6, type: 3}
@@ -21,3 +22,5 @@ MonoBehaviour:
   crop: {fileID: 0}
   itemHightlight: 1
   itemPrrefab: {fileID: 6000355379579690423, guid: 70ee79f45c63a354a905000e1e2a857c, type: 3}
+  price: 100
+  canBeSold: 1

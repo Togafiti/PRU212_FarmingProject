@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ItemDragAndDropController : MonoBehaviour
 {
-    [SerializeField] ItemSlot itemSlot;
+    [SerializeField] public ItemSlot itemSlot;
     [SerializeField] GameObject itemIcoin;
     RectTransform iconTransform;
     Image image;
@@ -52,10 +52,10 @@ public class ItemDragAndDropController : MonoBehaviour
             itemSlot.Copy(this.itemSlot);
             this.itemSlot.Set(item, count); 
         }
-        UpdateIcoin();
+        UpdateIcon();
     }
 
-    private void UpdateIcoin()
+    public void UpdateIcon()
     {
         if(itemSlot.item == null) { 
             itemIcoin.SetActive(false);
@@ -63,5 +63,15 @@ public class ItemDragAndDropController : MonoBehaviour
             itemIcoin.SetActive(true);
             image.sprite = itemSlot.item.icon;
         }
+    }
+
+    internal bool CheckForSale()
+    {
+        if(itemSlot.item == null) { return false; }
+        if(itemSlot.item.canBeSold == false)
+        {
+            return false;
+        }
+        return true;
     }
 }

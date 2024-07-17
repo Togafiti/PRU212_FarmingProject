@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1b7384471c7114bb56709d52be5b0e, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
+  id: 7
   Name: Sword
   stackable: 0
   icon: {fileID: 21300000, guid: fcfc5ef31ef8a1943a099e875884f4b3, type: 3}
   onAction: {fileID: 0}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
+  itemHightlight: 0
+  itemPrrefab: {fileID: 0}
+  price: 100
+  canBeSold: 1

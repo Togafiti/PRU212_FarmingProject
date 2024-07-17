@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Data/Item")]
 public class Item : ScriptableObject
 {
+    public int id;
     public string Name;
     public bool stackable;
     public Sprite icon;
@@ -14,4 +15,6 @@ public class Item : ScriptableObject
     public Crop crop;
     public bool itemHightlight;
     public GameObject itemPrrefab;
+    public int price = 100;
+    public bool canBeSold = true;
 }

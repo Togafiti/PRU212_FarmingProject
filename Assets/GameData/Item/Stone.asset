@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1b7384471c7114bb56709d52be5b0e, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: 
+  id: 6
   Name: Stone
   stackable: 1
   icon: {fileID: 21300000, guid: f00945d9428a1464d89e67f2b19744f8, type: 3}
@@ -19,3 +20,7 @@ MonoBehaviour:
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
   crop: {fileID: 0}
+  itemHightlight: 0
+  itemPrrefab: {fileID: 0}
+  price: 100
+  canBeSold: 1
