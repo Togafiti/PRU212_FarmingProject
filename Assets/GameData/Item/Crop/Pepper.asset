@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1b7384471c7114bb56709d52be5b0e, type: 3}
+  m_Name: Pepper
+  m_EditorClassIdentifier: 
+  id: 9
+  Name: Pepper
+  stackable: 1
+  icon: {fileID: -1404575883, guid: cd85054f3e9f93442978951c3c345504, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 11400000, guid: 6d0b9fd7c06bc9249b0f91f6f7756ce7, type: 2}
+  onItemUsed: {fileID: 11400000, guid: 6d0b9fd7c06bc9249b0f91f6f7756ce7, type: 2}
+  crop: {fileID: 11400000, guid: 0e13dc28d3c8d2342892028c7a8d41c6, type: 2}
+  itemHightlight: 0
+  itemPrrefab: {fileID: 0}
+  price: 100
+  canBeSold: 1

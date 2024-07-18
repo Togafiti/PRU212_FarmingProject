@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1b7384471c7114bb56709d52be5b0e, type: 3}
+  m_Name: Shelf
+  m_EditorClassIdentifier: 
+  id: 16
+  Name: Shelf
+  stackable: 0
+  icon: {fileID: 520050277, guid: b2b76b003d6efd24ab5a099e0c06e744, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 11400000, guid: 9a47445ae82558d44844285976856d01, type: 2}
+  onItemUsed: {fileID: 11400000, guid: 9a47445ae82558d44844285976856d01, type: 2}
+  crop: {fileID: 0}
+  itemHightlight: 1
+  itemPrrefab: {fileID: 1026136013875009030, guid: 886aef5ac09e29e4ca4e2afaf452a77a, type: 3}
+  price: 100
+  canBeSold: 1

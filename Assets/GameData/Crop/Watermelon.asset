@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8420a56e1bedd47b1c358d29bcbe1c, type: 3}
+  m_Name: Watermelon
+  m_EditorClassIdentifier: 
+  timeToGrow: 30
+  yield: {fileID: 11400000, guid: 62763aa43bdf9f84eaf58bd6155a2ad5, type: 2}
+  count: 2
+  sprites:
+  - {fileID: -1540164013, guid: cd85054f3e9f93442978951c3c345504, type: 3}
+  - {fileID: -202271521, guid: cd85054f3e9f93442978951c3c345504, type: 3}
+  - {fileID: 610399637, guid: cd85054f3e9f93442978951c3c345504, type: 3}
+  - {fileID: -1669979986, guid: cd85054f3e9f93442978951c3c345504, type: 3}
+  growthStageTime: 050000000d000000160000001e000000

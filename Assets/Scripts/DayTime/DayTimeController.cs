@@ -19,7 +19,6 @@ public class DayTimeController : MonoBehaviour
     [SerializeField] float timeScale = 60f;
     [SerializeField] float startAllTime = 28800f;
 
-    [SerializeField] TextMeshProUGUI text;
     [SerializeField] Light2D globalLight;
     private int days;
 
@@ -73,7 +72,6 @@ public class DayTimeController : MonoBehaviour
     {
         int hh = (int)Hours;
         int mm = (int)Minutes;
-        text.text = hh.ToString("00") + ":" + mm.ToString("00");
     }
 
     private void DayLight()
