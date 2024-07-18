@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: New Dialogue Container
   m_EditorClassIdentifier: 
   line:
-  - test1
-  - test2
-  - test3
+  - Hello
+  - Welcome to the city!
   actor: {fileID: 11400000, guid: f558a37fe18724b4f84745b6de5eda6a, type: 2}
