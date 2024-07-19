@@ -7551,6 +7551,10 @@ PrefabInstance:
       propertyPath: transitionType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3049849139837932256, guid: 613452dfb9cfcc0478839fc5aec4a670, type: 3}
+      propertyPath: sceneNameToTransition
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3802928798948251126, guid: 613452dfb9cfcc0478839fc5aec4a670, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0442

@@ -757,7 +757,7 @@ MonoBehaviour:
   nameEssentialScene: Essential
   nameNewGameStartScene: House
   menuCanvas: {fileID: 1774724611}
-  inventory: {fileID: 0}
+  inventory: {fileID: 11400000, guid: 9bc9e58b8d99fa9418a516cf26b53045, type: 2}
 --- !u!114 &83658951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,8 +815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 63, y: 11.640015}
-  m_SizeDelta: {x: -1478.2993, y: -654.5975}
+  m_AnchoredPosition: {x: 63, y: 86.228}
+  m_SizeDelta: {x: -1478.299, y: -505.422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &101751803 stripped
 RectTransform:
