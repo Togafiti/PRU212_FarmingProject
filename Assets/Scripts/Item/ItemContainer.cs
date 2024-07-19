@@ -113,4 +113,12 @@ public class ItemContainer : ScriptableObject
         }
         return false;
     }
+
+    public void Clear()
+    {
+        foreach (ItemSlot slot in slots)
+        {
+            slot.Clear();
+        }
+    }
 }

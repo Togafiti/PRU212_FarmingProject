@@ -757,6 +757,7 @@ MonoBehaviour:
   nameEssentialScene: Essential
   nameNewGameStartScene: House
   menuCanvas: {fileID: 1774724611}
+  inventory: {fileID: 0}
 --- !u!114 &83658951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4454,7 +4455,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 5.52, y: 6.34, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7749,10 +7750,10 @@ RectTransform:
   - {fileID: 1602820707}
   m_Father: {fileID: 1774724615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -815.1063, y: 412.93}
-  m_SizeDelta: {x: -1630.2126, y: -825.85}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 139.45392, y: -41.592957}
+  m_SizeDelta: {x: 278.90784, y: 83.18591}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &870366063
 MonoBehaviour:
@@ -12069,7 +12070,7 @@ Transform:
   m_GameObject: {fileID: 1339603445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 5.52, y: 6.34, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16062,6 +16063,7 @@ MonoBehaviour:
   nameEssentialScene: 
   nameNewGameStartScene: 
   menuCanvas: {fileID: 83658949}
+  inventory: {fileID: 0}
 --- !u!1001 &1776223356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19537,6 +19539,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 744939862620991214, guid: ff1f0bbee299b9f43bd3a8c07d73d201, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3760049596720119734, guid: ff1f0bbee299b9f43bd3a8c07d73d201, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -19591,11 +19597,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7085050535650240529, guid: ff1f0bbee299b9f43bd3a8c07d73d201, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5.52
       objectReference: {fileID: 0}
     - target: {fileID: 7085050535650240529, guid: ff1f0bbee299b9f43bd3a8c07d73d201, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 6.34
       objectReference: {fileID: 0}
     - target: {fileID: 7085050535650240529, guid: ff1f0bbee299b9f43bd3a8c07d73d201, type: 3}
       propertyPath: m_LocalPosition.z

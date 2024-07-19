@@ -7,9 +7,8 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private string nameEssentialScene;
     [SerializeField] private string nameNewGameStartScene;
-    [SerializeField] private GameObject menuCanvas; 
-
-   
+    [SerializeField] private GameObject menuCanvas;
+    [SerializeField] private ItemContainer inventory;
 
     private void Update()
     {
@@ -28,7 +27,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartNewGame()
     {
-        
+        inventory.Clear();
         SceneManager.LoadScene(nameNewGameStartScene, LoadSceneMode.Single);
         SceneManager.LoadScene(nameEssentialScene, LoadSceneMode.Additive);
     }

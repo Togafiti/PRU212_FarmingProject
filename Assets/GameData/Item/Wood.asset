@@ -22,5 +22,5 @@ MonoBehaviour:
   crop: {fileID: 0}
   itemHightlight: 0
   itemPrrefab: {fileID: 0}
-  price: 100
+  price: 20
   canBeSold: 1
